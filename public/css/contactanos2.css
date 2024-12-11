@@ -1,0 +1,808 @@
+/* Reset general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+
+
+
+/* Sección de imagen de fondo */
+.hero-section {
+
+    position: relative;
+    background: url('../imagenes/doctor-from-future-concept.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    /* La imagen ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    /* Eliminar subrayado */
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #045c2d;
+    /* Color de fondo */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    /* Espacio entre el párrafo y el botón */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #086c31;
+    /* Color al pasar el mouse */
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-content h1 {  
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+}
+
+
+/* Estilos para la sección de cards */
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+    margin-top: -100px;
+    /* Mueve las cards hacia abajo */
+}
+
+.card {
+    background: radial-gradient(circle, #fdfdfd,#fdfdfd,#fdfdfd,#fdfdfd, #98e2d7);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.icon img {
+    width: 50px;
+    /* Ajusta el tamaño del icono */
+    height: 50px;
+    /* Ajusta el tamaño del icono */
+    margin-bottom: 10px;
+    /* Espacio entre la imagen y el título */
+}
+
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #033c20;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Efecto de hover en las cards */
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+}
+
+/*quienes somos*/
+.container1 {
+    display: flex;
+    align-items: normal;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    background: radial-gradient(circle, #fdfdfd,#fdfdfd,#fdfdfd,#fdfdfd, #98e2d7);
+    /* Añadido espacio entre las secciones */
+}
+
+.text-container1 {
+    flex: 1;
+}
+
+.text-container1 h1 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 50px;
+    /* Tamaño de fuente para h1 */
+    text-align: start;
+    color: #05351b;
+    padding: 2px 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* Espacio entre h1 y h2 */
+}
+
+.text-container1 h2 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 40px;
+    color: #0a0a0a;
+    font-weight: bold;
+    padding: 2px 100px;
+    margin-top: 5px;
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    width: 60%;
+    border-radius: 8px;
+    margin: 30px;
+}
+
+.rayaAmarilla {
+    width: 95%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-container1 h1 {
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .text-container1 h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    
+}
+/*proposito 2*/
+.proposito {
+    background: linear-gradient(
+        to bottom,
+        #93cfca,
+        #ffffff,
+        rgb(254, 254, 254)
+      );
+
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    /* Espacio entre el propósito y la siguiente sección */
+}
+
+.left-column1 {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-color: #fed08a;
+}
+
+.right-column1 {
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.mission-text {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #0a0a0a;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.right-column1 p {
+    font-family: 'Calibri', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #020202;
+    text-align: justify;
+}
+
+.right-column1 ul {
+    font-family: 'Calibri', sans-serif;
+    list-style-type: disc;
+    margin-left: 50px;
+    color: #000000;
+}
+
+.right-column1 ul li {
+    font-family: 'Calibri', sans-serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .proposito {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-column1 {
+        border-right: none;
+        border-bottom: 1px solid #ddd;        
+    }    
+    .right-column1 {
+        padding-top: 20px;
+        padding-left: 0;
+
+    }    
+    .mission-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+    .right-column1 p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+    .right-column1 ul {
+        margin-left: 20px;
+        margin-right: 20px;
+    }       
+    
+}
+
+/*equipo-quienes somos*/
+.team {
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #148f94, #98e2d7, #148f94);
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    margin-bottom: 40px;
+    /* Espacio adicional entre team y faq */
+}
+
+/* Título y descripción */
+.team-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.team p {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.team-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Contenedor del equipo */
+.team-content {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    flex-wrap: wrap;
+}
+
+/* Cajas de miembros */
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto del miembro */
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Nombre y rol */
+.team-name {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Iconos sociales */
+.social-icons a {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #021c06;
+}
+
+
+
+/*preguntas frecuentes*/
+/* Contenedor principal con dos columnas */
+.main-container {
+    display: flex;
+    width: 100vw;
+    /* Ocupa el 100% del ancho de la ventana */
+    justify-content: space-between;
+    /* Espacia las dos columnas */
+    width: 100%;
+    height: auto;
+    /* Ajusta la altura automáticamente según el contenido */
+    padding: 0 20px;
+    /* Espacio interno */
+    box-sizing: border-box;
+}
+
+.faq-container {
+    width: 100vw;
+    /* La sección FAQ ocupará la mitad de la pantalla */
+    max-width: 8000px;
+    /* Establece un ancho máximo para evitar que sea tan largo */
+    padding-right: 20px;
+    /* Espacio entre la FAQ y el mapa */
+    border: 2px solid #fed08aa4;
+    /* Agregar borde */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle un efecto de elevación */
+    padding: 20px;
+    /* Relleno interno para separar el contenido del borde */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px;
+    /* Limita la altura mínima del contenedor de FAQ */
+}
+
+.titulo {
+    margin: 10px;
+    text-align: left;
+    /* Alinea el título a la izquierda */
+    font-size: 28px;
+    color: #064740;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 20px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    /* Acomoda las preguntas verticalmente */
+    gap: 15px;
+    /* Espacio entre cada pregunta */
+}
+
+.faq-item {
+    width: 100%;
+    /* Ocupa el 100% del contenedor */
+}
+
+.faq-pregunta {
+    background-color: #aae3db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Calibri', sans-serif;
+}
+
+.faq-answer {
+    display: none;
+    /* Oculta la respuesta por defecto */
+    padding: 15px;
+    border: 1px solid #11403a;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-family: 'Calibri', sans-serif;
+    text-align: left;
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        /* En pantallas pequeñas, apilamos los elementos */
+    }
+
+    .map-container {
+        width: 100%;
+        /* El mapa ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+
+
+
+/*formulario*/
+
+.form-container {
+    
+    background: linear-gradient(45deg, #ffffff, #e8e3d5,#e8e3d5,#e8e3d5,#e8e3d5, #ffffff);
+    /* Fondo gris claro */
+    padding: 20px;
+    /* Espaciado interno */
+    width: 100%;
+    /* Ancho del contenedor (más ancho) */
+    max-width: 2000px;
+    /* Limita el ancho máximo del contenedor */
+    margin: 40px auto;
+    /* Centrado horizontal y margen superior/inferior */
+    display: flex;
+    /* Diseño en línea para los hijos */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    gap: 30px;
+    /* Espaciado entre formulario e imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra para resaltar */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    width: 40%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+
+h1 {
+    font-family: 'Calibri', sans-serif;
+    color: #022107;
+
+}
+
+input,
+select {
+    width: 100%;
+    /* Ancho completo del contenedor */
+    padding: 9px;
+    margin: 15px 0;
+    border: 2px solid #333;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #0a672e;
+    box-shadow: 0 0 10px #0a672e;
+}
+
+.button-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.faq-pregunta:hover{
+    background-color: #063b3b98;
+}
+
+button {
+    background-color: #fed08a;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+
+.button-container button:hover {
+    background-color: #af8e5d;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.image-containers img {
+    width: 70%;
+    height: 70%;
+    margin-left: 80px;
+    border-radius: 12px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }    
+    .container {
+        width: 100%;
+    }   
+    
+}
+
+/* MAPA */
+.containerst {
+    display: flex;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #c8e7e4;
+}
+
+#map {
+    z-index: 1;
+    width: 50%;
+    height: 70%;
+}
+
+
+/* Contenedor para el título, descripción y la imagen */
+.info {
+    padding:5px;
+    width: 50%;
+    height: 70%;
+    background: radial-gradient(circle, #ffffff,#ffffff,#ffffff,#ffffff, #b1e0d99f);
+}
+
+.titulos {
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centra el título */
+}
+
+.conceptos {
+    text-align: justify;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* Centra el título */
+
+}
+
+.info img {
+    width: 50%;
+
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .containerst {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }    
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+    .info {
+        width: 100%;
+        height: auto;
+    }   
+    
+}
+
+/* FOOTER */
+.pie-de-pagina {
+  background-color: #063b3b;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Calibri", sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.seccion-pie {
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.seccion-pie h4 {
+  color: #fed08a;
+  margin-bottom: 10px;
+}
+
+.seccion-pie p,
+.seccion-pie ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.seccion-pie ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.seccion-pie ul li {
+  margin: 5px 0;
+}
+
+.seccion-pie ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.seccion-pie ul li a:hover {
+  text-decoration: underline;
+}
+
+.enlaces-sociales {
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-sociales li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.enlaces-sociales li a:hover {
+  color: #5dc1b9;
+}
+
+.pie-inferior {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #5dc1b9;
+  padding-top: 10px;
+}
+
+.logo-footer {
+  max-width: 150px; /* Ajusta el tamaño máximo del logo */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSI FOOTER */
+@media (max-width: 1024px) {
+  .contenedor-pie {
+    justify-content: center;
+    text-align: center;
+  }
+  .seccion-pie {
+    width: 45%; /* Ajusta el ancho de las secciones en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-pie {
+    flex-direction: column; /* Las secciones se apilan verticalmente */
+  }
+  .seccion-pie {
+    width: 100%; /* Cada sección ocupa todo el ancho en pantallas pequeñas */
+  }
+  .pie-inferior {
+    margin-top: 15px;
+  }
+}
+
+/* FIN DE FOOTER */

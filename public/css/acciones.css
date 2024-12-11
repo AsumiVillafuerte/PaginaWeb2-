@@ -1,0 +1,128 @@
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contenidoMain {
+  margin-top: 165px; /* Ajusta el valor según el alto de tu header */
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoMain {
+    margin-top: 100px; /* Ajusta el valor para dispositivos móviles */
+  }   
+  
+}
+
+
+/*Imgen portada*/
+#hero {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+  background-image: url(../imagenes/portada-acciones.gif);
+  background-repeat: no-repeat;
+  background-size: 100%; /* Ajusta la imagen al 100% del contenedor sin recortarla */
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 50vh; /* Ajusta la altura del contenedor para dispositivos móviles */
+  }
+
+
+}
+
+/*primera fila*/
+#tarjeta {
+  width: 325px;
+  background-color: aquamarine;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 50px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tarjeta img {
+  width: 330px; /* Anchura fija */
+  height: 180px; /* Altura fija */
+  object-fit: cover;
+}
+
+.tarjetas {
+  padding: 16px;
+}
+
+.tarjetas h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.tarjetas p {
+  color: rgb(20, 20, 21);
+  font-size: 15px;
+  line-height: 1.3;
+  
+}
+
+
+@media screen   and (max-width: 768px) {
+  #tarjeta {
+    width: 100%;
+    max-width: 300px;
+    gap: 16px;  
+    margin: 20px;
+  } 
+
+  #tarjeta{
+    width: 100%;  
+    max-width: 300px;
+    gap: 16px;
+
+  }
+  #tarjeta img {
+    width: 100%;
+    height: auto;
+  }
+
+  #tarjeta h3 {
+    font-size: 24px;
+  }   
+  #tarjeta p {
+    font-size: 14px;
+  } 
+
+}
+
+

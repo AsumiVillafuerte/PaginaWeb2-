@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/contactanos2.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body>
+    <header class="header-fijo">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="../imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="../index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="../html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="../html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="../html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="../html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="../html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/juego.html" class="enlaceBoton">Diviértete</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="../html/noticias.html" class="enlaceBoton">Noticias</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="../html/contactanos2.html">Nosotros</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="../html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../js/responsiMenu.js"></script> <!-- Archivo JavaScript para manejar el menú -->
+    </header>
+
+
+    <main class="contenidoMain" id="formulario">
+
+        <!-- Sección de imagen de fondo -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>CONTACTANOS CON NOSOTROS</h1>
+                <p>Explora nuestros servicios y más</p>
+                <a href="../index.html" class="hero-button">Ir al inicio</a> <!-- Botón con enlace -->
+            </div>
+        </section>
+
+        <!-- Sección de cards debajo de la imagen -->
+        <section class="cards-section">
+            <div class="card">
+                <div class="icon">
+                    <img src="../imagenes/servicios-sociales.png" alt="Icono Compromiso"> <!-- Imagen como icono -->
+                </div>
+                <h3>Nuestro compromiso</h3>
+                <p>
+                    Nos apasiona promover la salud y el bienestar a través de soluciones prácticas y accesibles. Ya sea
+                    con
+                    nuestras iniciativas alineadas al ODS 3 o con nuestras galletas nutritivas, trabajamos para
+                    ofrecerte
+                    opciones que impacten positivamente tu vida y la de tu familia.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../imagenes/servicio-al-cliente.png" alt="Icono Contacto"> <!-- Imagen como icono -->
+                </div>
+                <h3>¿Por qué contactarnos?</h3>
+                <p>
+                    Tu bienestar es nuestra principal motivación. Contáctanos para recibir información sobre nuestros
+                    productos
+                    nutritivos, consejos de salud personalizados y proyectos enfocados en mejorar tu calidad de vida.
+                    ¡Queremos
+                    ser parte de tu camino hacia un futuro más saludable!
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../imagenes/participacion-de-la-comunidad.png" alt="Icono Comunidad">
+                    <!-- Imagen como icono -->
+                </div>
+                <h3>Nuestra comunidad</h3>
+                <p>
+                    Únete a nuestra comunidad comprometida con el bienestar y el cuidado de la salud. Aquí encontrarás
+                    recursos
+                    útiles, recomendaciones nutricionales, y acceso exclusivo a nuestras iniciativas y productos
+                    diseñados
+                    para
+                    ayudarte a alcanzar un estilo de vida pleno y equilibrado.
+                </p>
+            </div>
+        </section>
+        <img src="../imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+
+        <!-- quienes somos -->
+        <div class="container1">
+            <div class="text-container1">
+                <h1>Quiénes Somos</h1>
+                <h2>Existimos para dar a conocer la Importancia de la salud para un Pais y mundo mejor.</h2>
+            </div>
+            <div class="image-container">
+                <img src="../imagenes/nosotrasGif.gif" alt="imagen principal">
+            </div>
+        </div>
+        <img src="../imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+        <div class="proposito">
+            <div class="left-column1">
+                <p class="mission-text">
+                    Somos estudiantes de Análisis de Sistemas del Instituto Valle Grande, comprometidos con mejorar el
+                    bienestar
+                    y la salud de nuestra comunidad estudiantil. Nuestro enfoque está en brindar soluciones prácticas
+                    que
+                    combatan problemas de salud como la anemia, especialmente en jóvenes de 17 a 25 años.
+                </p>
+            </div>
+            <div class="right-column1">
+                <p><strong>Nuestro objetivo es promover un estilo de vida saludable mediante:</strong></p>
+                <ul>
+                    <li>La creación de productos nutritivos, como nuestras galletas de sangrecita, diseñadas para
+                        prevenir
+                        la
+                        anemia.</li>
+                    <li>La sensibilización sobre la importancia de una buena alimentación para el rendimiento académico
+                        y la
+                        salud
+                        mental.</li>
+                    <li>El desarrollo de soluciones accesibles y sostenibles para estudiantes con horarios exigentes.
+                    </li>
+                </ul>
+                <p>
+                    <strong>Creemos que pequeños cambios pueden generar un gran impacto. Trabajamos con pasión y
+                        creatividad
+                        para
+                        contribuir al ODS 3, promoviendo el bienestar y la salud entre los jóvenes.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- css del team claudia  -->
+        <section class="team">
+            <h2 class="team-title">Descubre un poco mas sobre nosotras</h2>
+            <p class="team-description">
+                Somos un equipo dedicado a la creatividad y al impacto positivo. Conócenos más a través de nuestras
+                redes
+                sociales.
+            </p>
+            <div class="team-content">
+                <div class="box">
+                    <img src="../imagenes/perfil.jpeg" alt="Asumi - Artist" class="team-photo">
+                    <h3 class="team-name">Asumi</h3>
+                    <h5 class="team-role">Artist</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/your-instagram-username/" target="_blank"
+                            aria-label="Instagram de Asumi">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/your-twitter-username" target="_blank"
+                            aria-label="Twitter de Asumi">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/your-github-username" target="_blank" aria-label="GitHub de Asumi">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../imagenes/perfil.jpeg" alt="Aixa - Artist" class="team-photo">
+                    <h3 class="team-name">Aixa</h3>
+                    <h5 class="team-role">Artist</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/your-instagram-username/" target="_blank"
+                            aria-label="Instagram de Aixa">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/your-twitter-username" target="_blank"
+                            aria-label="Twitter de Aixa">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/your-github-username" target="_blank" aria-label="GitHub de Aixa">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="main-container">
+            <div class="faq-container">
+                <h1 class="titulo">Preguntas Frecuentes</h1>
+                <div class="faq">
+                    <div class="faq-item">
+                        <button class="faq-pregunta">¿Cuáles son los síntomas de la gastritis crónica?</button>
+                        <div class="faq-answer">
+                            <p>
+                                Sensación de incomodidad o dolor en la parte superior del abdomen. En algunos casos, la
+                                gastritis
+                                crónica puede estar asociada con anemia debido a la deficiencia de vitamina B12.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-pregunta">¿Cuáles serían los tres hábitos saludables para una persona adulta
+                            mayor?</button>
+                        <div class="faq-answer">
+                            <p>1. Actívate físicamente.</p>
+                            <p>2. Mantén una dieta equilibrada.</p>
+                            <p>3. Procura la socialización.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-pregunta">¿Es importante la actividad física en un adulto mayor?</button>
+                        <div class="faq-answer">
+                            <p>
+                                El entrenamiento físico y la movilidad tienen múltiples beneficios en los mayores, tales
+                                como
+                                aumento en la resistencia cardiopulmonar, resistencia musculoesquelética, fuerza y
+                                movilidad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-pregunta">¿Es importante tomar líquidos en el día?</button>
+                        <div class="faq-answer">
+                            <p>
+                                Nuestro cuerpo necesita estar hidratado para funcionar de forma óptima. Si no tenemos
+                                suficiente
+                                líquido en el cuerpo, las funciones esenciales como la circulación de la sangre no se
+                                realizan
+                                adecuadamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/contactanos2.js"></script>
+
+
+        <!-- Formulario -->
+        <div class="form-container">
+            <div class="container">
+                <center>
+                    <h1>Contáctanos</h1>
+                </center>
+                <div class="form-wrapper">
+                    <div class="form-image"></div>
+                    <div class="form-container">
+                        <form id="registroForm">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <small class="error" id="error-nombre"></small>
+
+
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                            <small class="error" id="error-apellido"></small>
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" id="telefono" name="telefono" required>
+                            <small class="error" id="error-telefono"></small>
+
+                            <label for="correo">Correo:</label>
+                            <input type="text" id="correo" name="correo" required>
+                            <small class="error" id="error-correo"></small>
+
+                            <label for="consulta">Consulta:</label>
+                            <input type="text" id="consulta" name="consulta" required>
+
+
+                            <input type="submit" value="Enviar" class="submit">
+                            <div class="alerta-error"></div>
+                        </form>
+                    </div>
+                        
+                </div>
+            </div>
+            <script src="../js/validaciones.js"></script>
+            <script src="../js/formulario.js"></script>
+
+
+            <!-- Imagen al lado izquierdo del formulario -->
+            <div class="image-containers">
+                <img src="../imagenes/secretarioOficial.gif" alt="Imagen al costado">
+            </div>
+        </div>
+
+        <div class="containerst">
+            <!-- Mapa -->
+            <div id="map"></div>
+
+            <!-- Contenido: Título, Descripción e Imagen -->
+            <div class="info">
+                <h1 class="titulos">Mapa Interactivo de Hospitales en la Región de Cañete</h1>
+                <p class="conceptos">Este mapa interactivo muestra los hospitales de la región de Cañete, permitiendo a
+                    los
+                    usuarios identificar fácilmente las ubicaciones de los centros de salud en la zona. Además, incluye
+                    indicaciones detalladas sobre cómo llegar desde el punto de referencia de Vallegrande, facilitando
+                    la
+                    ubicación y acceso a los hospitales más cercanos. El mapa cuenta con funciones de zoom y búsqueda
+                    para
+                    que los usuarios puedan explorar con facilidad las diferentes opciones de atención médica
+                    disponibles en
+                    la región.</p>
+                <img src="../imagenes/Hospital.gif" alt="Instituto Valle Grande" class="hospital">
+            </div>
+        </div>
+    </main>
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/contactanos2.js"></script>
+
+
+</body>
+
+</html>

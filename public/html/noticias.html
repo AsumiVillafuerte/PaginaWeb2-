@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud al dia</title>
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="icon" href="../imagenes/icono-peque.jpg" type="imagen/png">
+    <link rel="stylesheet" href="../css/general.css">
+
+<body>
+    <header class="header-fijo">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="../imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="../index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="../html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="../html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="../html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="../html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="../html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/juego.html" class="enlaceBoton">Diviértete</a></li>
+                    <li class="elementoListaBotones"><a href="../html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="../html/noticias.html" class="enlaceBoton">Noticias</a></li>
+                    <li class="elementoListaBotones"><a href="../html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="../html/contactanos2.html">Nosotros</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="../html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../js/responsiMenu.js"></script> <!-- Archivo JavaScript para manejar el menú -->
+    <section id="hero">
+    </section>
+
+    <h2 class="titulo">Videos</h2>
+
+    <div class="video-row" id="row1">
+        <iframe src="https://www.youtube.com/embed/6GocZ96xomU?si=Jfxa1C9io-3431Ww" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/1aZBrq_XQPM?si=G1eZZam1Fj3Y5DyX" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/vNW2S9gyKuM?si=cHxOHJ_x5kblUEcU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AYXW7vsUZ9c?si=ozyA4fGqN6cYVtmj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-row hidden" id="videos1">
+        <iframe src="https://www.youtube.com/embed/lstCC70vux8?si=OrPXfMYBX0fwJzJC" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/wY4eL3gW0J4?si=jw--Vg3zLNXPnLaN" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-icWZuVtjK8?si=e7qG1zKcIlUubUZ0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ir3kgQAyDMk?si=wm710-Zu8ET65-sg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="boton1">
+        <button id="button1">Mostrar más videos</button>
+    </div>
+
+
+    <h2 class="titulo">Materiales de comunicación</h2>
+
+    <div class="infografia1">
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/infografia-pulmon.jpg" alt="" style="width: 110%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Cáncel del pulmón</h2>
+                <p class="infografia-texto">Infografía sobre factores de riesgo, síntomas y prevención para detectar
+                    a
+                    tiempo esta enfermedad. Conoce cómo cuidar tu salud.</p>
+                <a href="../Infografias/cancer_pulmon.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/infografia_saludbucal.jpg" alt="" style="width: 110%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Técnica correcta del cepillado dental</h2>
+                <p class="infografia-texto">Aprende los movimientos y tiempos recomendados para mantener tus dientes
+                    y
+                    encías sanos. ¡Cuida tu sonrisa todos los días con estos simples pasos!.</p>
+                <a href="../Infografias/info_adultomayor_saludbucal.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/infografia_canMama.jpg" alt="" style="width: 100%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Cáncer de Mama</h2>
+                <p class="infografia-texto">Descubre los factores de riesgo, síntomas y la importancia de la
+                    detección
+                    temprana. </p>
+                <a href="../Infografias/info_mujer_deteccionenfermedades2.pdf" class="descarga-boton"
+                    download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/info_mujeres_anemia.jpg" alt="" style="width: 110%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Detección de Anemia</h2>
+                <p class="infografia-texto">Aprende a identificar signos de deficiencia de hierro y la importancia
+                    de
+                    realizarse pruebas para una intervención temprana. Mantén tu salud en óptimas condiciones.</p>
+                <a href="../Infografias/info_mujeres_anemia.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="infografia2 segundo">
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/info_canProstata.jpg" alt="" style="width: 100%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Cáncer de Próstata</h2>
+                <p class="infografia-texto">Infórmate sobre los factores de riesgo, síntomas y la importancia de la
+                    detección temprana.</p>
+                <a href="../Infografias/infografia_cancerprostata.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/infografia_depresion.jpg" alt="" style="width: 110%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Depresión</h2>
+                <p class="infografia-texto">Descubre los síntomas, causas y tratamientos disponibles. Aprende a
+                    identificar señales de alerta y la importancia de buscar ayuda.</p>
+                <a href="../Infografias/infografia_depresion.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/infografia_infartocorazon.jpg" alt="" style="width: 80%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Infarto del corazón</h2>
+                <p class="infografia-texto">Aprende cómo una alimentación saludable y un estilo de vida activo
+                    pueden
+                    proteger tu corazón.</p>
+                <a href="../Infografias/infografia_infartocorazon.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+
+        <div class="infografia">
+            <div class="infografia-container">
+                <img src="../imagenes/tuberculosis.jpg" alt="" style="width: 100%; height: auto;">
+            </div>
+            <div class="infografia-contexto">
+                <h2 class="infografia-titulo">Prevención de Tuberculosis</h2>
+                <p class="infografia-texto">Descubre las medidas clave para protegerte y a los demás de esta
+                    enfermedad.
+                </p>
+                <a href="../Infografias/infografia_tuberculosis.pdf" class="descarga-boton" download>Descargar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <button  id="toggleButton" onclick="toggleSecondRow()">Ver más</button>
+    </div>
+
+    <h2 class="titulo">Ultimas noticias</h2>
+
+    <div class="noticias1">
+        <div class="noticias">
+            <div class="noticias-container">
+                <img src="../imagenes/Noticia1.webp" alt="">
+            </div>
+            <div class="noticias-contexto">
+                <h2 class="noticias-titulo">Noticia:</h2>
+                <p class="noticias-texto">Nuevas subvenciones del Fondo para Pandemias ayudarán a fortalecer la
+                    preparación y respuesta ante pandemias en países de las Américas</p>
+                <a href="ruta/al/video5.mp4" class="descarga-boton" target="_blank">Leer mas ...</a>
+            </div>
+        </div>
+
+        <div class="noticias">
+            <div class="noticias-container">
+                <img src="../imagenes/Noticia2.webp" alt="">
+            </div>
+            <div class="noticias-contexto">
+                <h2 class="noticias-titulo">Noticia:</h2>
+                <p class="noticias-texto">La OPS acoge el Diálogo Económico y de Salud de las Américas para
+                    fortalecer
+                    los sistemas de salud y la resiliencia económica de la región</p>
+                <a href="https://www.paho.org/es/noticias/24-10-2024-ops-acoge-dialogo-economico-salud-americas-para-fortalecer-sistemas-salud"
+                    class="descarga-boton" target="_blank">Leer mas ...</a>
+            </div>
+        </div>
+
+        <div class="noticias">
+            <div class="noticias-container">
+                <img src="../imagenes/Noticia3.webp" alt="">
+            </div>
+            <div class="noticias-contexto">
+                <h2 class="noticias-titulo">Noticia:</h2>
+                <p class="noticias-texto">Estados Miembros de la OPS aprueban estrategia para fortalecer la
+                    detección
+                    temprana de amenazas a la salud</p>
+                <a href="https://www.paho.org/es/noticias/3-10-2024-estados-miembros-ops-aprueban-estrategia-para-fortalecer-deteccion-temprana"
+                    class="descarga-boton" target="_blank">Leer mas ...</a>
+            </div>
+        </div>
+
+        <div class="noticias">
+            <div class="noticias-container">
+                <img src="../imagenes/Notica4.webp" alt="">
+            </div>
+            <div class="noticias-contexto">
+                <h2 class="noticias-titulo">Noticia:</h2>
+                <p class="noticias-texto">Los Estados Miembros de la OPS aprueban nueva estrategia regional para
+                    fortalecer las Funciones Esenciales de Salud Pública</p>
+                <a href="https://www.paho.org/es/noticias/3-10-2024-estados-miembros-ops-aprueban-nueva-estrategia-regional-para-fortalecer"
+                    class="descarga-boton" target="_blank">Leer mas ...</a>
+            </div>
+        </div>
+
+        <div class="noticias2 tercero">
+            <div class="noticias">
+                <div class="noticias-container">
+                    <img src="../imagenes/Noticia5.webp" alt="">
+                </div>
+                <div class="noticias-contexto">
+                    <h2 class="noticias-titulo">Noticia:</h2>
+                    <p class="noticias-texto">Las emergencias sanitarias y la eliminación del cáncer cervicouterino
+                        entre los temas prioritarios durante la visita oficial del Director de la OPS a la Unión
+                        Europea
+                        y España</p>
+                    <a href="https://www.paho.org/es/noticias/17-10-2024-emergencias-sanitarias-eliminacion-cancer-cervicouterino-entre-temas"
+                        class="descarga-boton" target="_blank">Leer mas ...</a>
+                </div>
+            </div>
+
+            <div class="noticias">
+                <div class="noticias-container">
+                    <img src="../imagenes/Noticia6.webp" alt="">
+                </div>
+                <div class="noticias-contexto">
+                    <h2 class="noticias-titulo">Noticia:</h2>
+                    <p class="noticias-texto">CEPAL y OPS llaman a priorizar la inversión en salud para reducir la
+                        desigualdad y alcanzar los ODS en América Latina y el Caribe</p>
+                    <a href="https://www.paho.org/es/noticias/21-10-2024-cepal-ops-llaman-priorizar-inversion-salud-para-reducir-desigualdad-alcanzar"
+                        class="descarga-boton" target="_blank">Leer mas ...</a>
+                </div>
+            </div>
+
+
+            <div class="noticias">
+                <div class="noticias-container">
+                    <img src="../imagenes/Noticia7.webp" alt="">
+                </div>
+                <div class="noticias-contexto">
+                    <h2 class="noticias-titulo">Noticia:</h2>
+                    <p class="noticias-texto">La OPS concluye su 61º Consejo Directivo con acuerdos estratégicos</p>
+                    <a href="https://www.paho.org/es/noticias/4-10-2024-ops-concluye-su-61o-consejo-directivo-con-acuerdos-estrategicos"
+                        class="descarga-boton" target="_blank">Leer mas ...</a>
+                </div>
+            </div>
+
+
+            <div class="noticias">
+                <div class="noticias-container">
+                    <img src="../imagenes/Noticia8.webp" alt="">
+                </div>
+                <div class="noticias-contexto">
+                    <h2 class="noticias-titulo">Noticia:</h2>
+                    <p class="noticias-texto">Organismos internacionales, agencias de cooperación y expertos
+                        colaboran
+                        compartiendo información estratégica sobre las capacidades de innovación y producción de
+                        vacunas
+                        en LAC</p>
+                    <a href="https://www.paho.org/es/noticias/21-10-2024-organismos-internacionales-agencias-cooperacion-expertos-colaboran-compartiendo"
+                        class="descarga-boton" target="_blank">Leer mas ...</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="botonpp">
+        <button id="toggleButton3" onclick="toggleSecondRow()">Ver más</button>
+    </div>
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="/public/javaScript/sp13-us2-TarjetaCard.js"></script>
+</body>
+</div>
+
+</html>

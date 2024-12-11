@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/biblioteca.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" href="imagenes/icono-peque.jpg" type="imagen/png">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="content" style="display: none;"></div>
+    <div class="loader" id="loader"></div>
+    <script src="../js/loader.js"></script>
+    <script src="../js/biblioteca.js"></script>
+
+
+    <header class="header-fijo">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="../imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="../index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="../html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="../html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="../html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="../html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="../html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/juego.html" class="enlaceBoton">Diviértete</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="../html/noticias.html" class="enlaceBoton">Noticias</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="../html/contactanos2.html">Nosotros</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="../html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../js/responsiMenu.js"></script> <!-- Archivo JavaScript para manejar el menú -->
+
+    <main class="contenidoMain">
+
+        <section id="hero">
+        </section>
+
+        <div class="texto">
+            <h2 class="Subtítulo">Conocimiento para tu salud</h2>
+            <p class="contexto">En esta colección, encontrarás libros que abordan diferentes enfermedades, sus
+                causas y
+                tratamientos. Nuestro objetivo es ofrecerte información respaldada por expertos para que puedas
+                comprender mejor los desafíos de la salud y las soluciones disponibles. Desde la prevención hasta
+                los
+                últimos avances en tratamientos, estos libros están aquí para apoyarte en cada etapa de tu
+                bienestar.
+            </p>
+
+        </div>
+
+        <div class="container">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="../imagenes/asma.jpeg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Julio Ancochea Bermúdez<br>
+                        Mercedes Ricote Belinchón</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Octubre 2006</p>
+                    <a href="../Libros/Asma.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="../imagenes/cancer.jpeg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Andreas Moritz</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Julio de 2009</p>
+                    <a href="../Libros/cancer.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="../imagenes/tuberculosis.jpg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Thomas R. Frieden</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Año 2006</p>
+                    <a href="../Libros/tuberculosis.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <img src="../imagenes/cardiovascular.jpg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Mario Roberto Kenar,
+                        Luis Alberto Flores,<br>
+                        Julio Bono Sati</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Año 2014</p>
+                    <a href="../Libros/cardiovascular.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card">
+                <img src="../imagenes/covid-19.webp" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Ramiro A. Gómez Arzapalo Dorantes</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Primera edición, 2020</p>
+                    <a href="../Libros/covid-19.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card">
+                <img src="../imagenes/dengue.jpg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Organización Panamericana de la Salud</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Washington, D.C., 2016</p>
+                    <a href="../Libros/dengue.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 7 -->
+            <div class="card">
+                <img src="../imagenes/diabetes.jpg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">SEMERGEN Andalucía</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Septiembre 2014 </p>
+                    <a href="../Libros/Diabetes.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="card">
+                <img src="../imagenes/enfermdedades_respiratorias.png" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Pedro Cabrera Navarro <br>
+                        Felipe Rodriguez de Castro</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Septembre de 2005</p>
+                    <a href="../Libros/enfermedades_respiratorias.pdf" download class="card-button">Descargar
+                        Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 9 -->
+            <div class="card">
+                <img src="../imagenes/enfermedades-infecciosas-.webp" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">Antonio Rivero Román<br>
+                        Federico García</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Junio de 2022</p>
+                    <a href="../Libros/enfermedadesInfecciosasen.pdf" download class="card-button">Descargar
+                        Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 10 -->
+            <div class="card">
+                <img src="../imagenes/leucemia.png" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Autor:</h2>
+                    <p class="card-paragraph">Instituto Nacional del Cáncer</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Julio de 2014</p>
+                    <a href="../Libros/leucemia.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 11 -->
+            <div class="card">
+                <img src="../imagenes/depresion_ansiedad.jpg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">AUTOR:</h2>
+                    <p class="card-paragraph">José García-Herrera Pérez Bryan <br>
+                        E. Vanesa Nogueras Morillas</p>
+                    <h3 class="card-subtitle">FECHA DE EMISION:</h3>
+                    <p class="card-paragraph">Agosto de 2013</p>
+                    <a href="../Libros/presion_ansiedad.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+            <!-- Tarjeta 12 -->
+            <div class="card">
+                <img src="../imagenes/sarampion.jpeg" alt="Imagen de ejemplo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Coordinadoras::</h2>
+                    <p class="card-paragraph">Àngela Domínguez García<br>
+                        Eva Borràs López
+                    </p>
+                    <h3 class="card-subtitle">Editor:</h3>
+                    <p class="card-paragraph">Manuel Arranz Lázaro</p>
+                    <a href="../Libros/sarampion.pdf" download class="card-button">Descargar Documento</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/biblioteca.js"></script>
+    </div>
+</body>
+
+</html>

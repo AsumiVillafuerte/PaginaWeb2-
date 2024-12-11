@@ -1,0 +1,851 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom,
+      #09504a,
+      #93cfca,
+      #93cfca,
+      #93cfca,
+      #93cfca,
+      #93cfca,
+      #ffffff,
+      rgb(254, 254, 254));
+  margin: 0;
+  font-family: "Calibri", sans-serif;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header fijo */
+.header-fijo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* Asegura que esté encima de otros elementos */
+  background-color: #063b3b;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Opcional: sombra para separarlo del contenido */
+  display: flex;
+  flex-direction: column;
+  /* Organiza las secciones de arriba hacia abajo */
+}
+
+.header-fijo .encabezado img {
+  max-height: 60px;
+}
+
+.encabezado {
+  background-color: #063b3b;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* Alinear los elementos en columna (vertical) */
+}
+
+.claizu {
+  max-height: 60px; /* Mantiene la altura máxima */
+}
+
+
+/* Botón de hamburguesa */
+.botonMenu {
+  font-size: 30px;
+  /* Tamaño del icono de la hamburguesa */
+  background: none;
+  /* Sin fondo */
+  border: none;
+  /* Sin borde */
+  color: white;
+  /* Color blanco */
+  cursor: pointer;
+  /* Hacerlo clickeable */
+}
+
+/* Menú General */
+.menuGeneral {
+  background-color: #f4f4f4;
+  padding: 10px;
+  background: linear-gradient(to bottom, #09504a, #389292);
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+
+}
+
+.contenedorBotones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.listaBotones {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+}
+
+.elementoListaBotones {
+  position: relative;
+  flex: 1;
+  margin: 0 15px;
+
+}
+
+.enlaceBoton {
+  display: block;
+  color: #fff;
+  background-color: #329898cf;
+  text-decoration: none;
+  padding: 8px 0;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  border: 3px solid #fed08ae9;
+}
+
+.enlaceBoton:hover {
+  background-color: #276862;
+  color: #fff;
+}
+
+/* Contenido desplegable */
+.contenidoDesplegable {
+  padding: 15px;
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, #2f8584, #2f8584, #328a89, #09504a);
+  min-width: 220px;
+  z-index: 10;
+  font-size: 16px;
+}
+
+.enlaceDesplegable {
+  display: block;
+  padding: 8px 8px;
+  margin: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  background-color: #329898cf;
+  border: 3px solid #fed08a;
+  font-size: 16px;
+}
+
+.enlaceDesplegable:hover {
+  background-color: #276862;
+}
+
+/* Asegura que el menú desplegable se muestre al pasar el ratón */
+.elementoListaBotones:hover .contenidoDesplegable {
+  display: block;
+}
+
+.botonDesplegable {
+  background-color: #329898cf;
+  color: white;
+  padding: 11px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+  border: 3px solid #fed08a;
+  font-size: 16px;
+}
+
+.botonDesplegable:hover {
+  background-color: #276862;
+}
+
+/* Menú Off-Canvas */
+.menuOffCanvas {
+  display: none;
+  /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.menuOffCanvas.activo {
+  display: block;
+  /* Se muestra cuando tiene la clase 'activo' */
+}
+
+.menuOffCanvas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuOffCanvas ul li {
+  margin: 20px 0;
+}
+
+.menuOffCanvas ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+.menuOffCanvas ul li a:hover {
+  background-color: #276862;
+}
+
+
+
+/* Menú General (ocultar en móviles) */
+.menuGeneral {
+  display: block;
+  /* Muestra el menú por defecto en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+
+  /* Se activa para pantallas de 768px o menos */
+  /* Ocultar menú en pantallas pequeñas */
+  .menuGeneral {
+    display: none;
+  }
+
+  /* Mostrar el menú Off-Canvas en pantallas pequeñas */
+  .menuOffCanvas {
+    display: block;
+  }
+
+  /* Hacer que el menú off-canvas ocupe toda la pantalla */
+  .menuOffCanvas.activo {
+    display: block;
+    width: 35%;
+    /* Ajusta el ancho para ocupar toda la pantalla */
+  }
+}
+
+/* Estilos del menú Off-Canvas */
+.menuOffCanvas {
+  display: none;
+  /* Ocultarlo por defecto */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #063b3b;
+  color: white;
+  padding: 20px;
+  z-index: 200;
+  /* Asegúrate de que esté encima de otros elementos */
+}
+
+/* Clase 'activo' para mostrar el menú */
+.menuOffCanvas.activo {
+  display: block;
+}
+
+/* Botón para activar el menú off-canvas (hamburguesa) */
+.botonMenu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+  /* Ocultarlo por defecto en pantallas grandes */
+}
+
+/* Mostrar el botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .botonMenu {
+    display: block;
+    /* Mostrar el botón en pantallas pequeñas */
+  }
+}
+
+
+
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  background-image: url(../imagenes/portada-noticia.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  margin-top: 100px;
+  /* Ajusta el valor según el espacio que desees */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 70vh;  /* Ajusta la altura en pantallas más pequeñas */
+    margin-top: 50px;  /* Menos espacio superior en dispositivos pequeños */
+  }
+}
+
+/* En dispositivos móviles muy pequeños */
+@media screen and (max-width: 480px) {
+  #hero {
+    height: 60vh;  /* Reduce más la altura para dispositivos muy pequeños */
+    margin-top: 30px;  /* Asegura que haya un poco de margen en la parte superior */
+  }
+}
+
+
+.titulo {
+  text-align: left;
+  font-size: 2em;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 30px 20px 20px 20px;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #000;
+  margin-top: 5px;
+}
+
+/*VIDEO*/
+.video-container {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-around;
+    flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.video-row iframe {
+  width: calc(23% - 10px);
+  height: 200px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.boton1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 60px; 
+  width: 100%;}
+
+#button1 {
+  background-color: #00796b; 
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#button1:hover {
+  background-color: #005f56; 
+  transform: scale(1.05); 
+}
+
+.hidden {
+  display: none; /* Clase para ocultar filas */
+}
+
+
+/* Para pantallas pequeñas (móviles en vertical) */
+@media (max-width: 600px) {
+  .video-row iframe {
+    width: 100%; 
+    height: 200px; 
+    margin: 10px 0; 
+  }
+}
+
+/* Para pantallas medianas (tabletas y móviles en horizontal) */
+@media (max-width: 900px) {
+  .video-row iframe {
+    width: calc(48% - 10px); 
+  }
+}
+
+/* Para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 901px) {
+  .video-row iframe {
+    width: calc(23% - 10px); 
+  }
+}
+
+
+/* Infografía */
+.infografia1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Styling for each infographic */
+.infografia {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  min-width: 280px;
+  max-width: calc(25% - 20px);
+  height: 300px;
+}
+
+.infografia-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.infografia-imagen {
+  width: 10%;
+  height: 10px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content styling */
+.infografia-contexto {
+  flex: 2;
+  padding: 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  height: auto;
+}
+
+.infografia-titulo {
+  font-size: 1em;
+  color: #333;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.infografia-texto {
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  font-size: 12px;
+}
+
+.infografia-button {
+  background-color: #00796b;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+  max-width: 100px;
+}
+
+.infografia-button:hover {
+  background-color: #005f56;
+}
+
+.descarga-boton {
+  display: block;
+  margin-top: 80px;
+  padding: 10px 20px;
+  background-color: #005f56;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.descarga-boton:hover {
+  background-color: #005f56;
+}
+
+.segundo {
+  display: none;
+}
+
+.contenedor {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #00796b; 
+  color: white; 
+  padding: 12px 24px;
+  border: none; 
+  border-radius: 8px;
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: 10px auto; 
+  width: fit-content; 
+  height: 40px; 
+}
+
+.contenedor:hover {
+  background-color: #005f56;
+  transform: scale(1.05);
+}
+
+#toggleButton {
+  background-color: #00796b; /* Verde */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .infografia1 {
+    flex-direction: column; 
+  }
+
+  .infografia {
+    flex: 1 1 100%; 
+    max-width: 100%;
+    margin: 10px 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .infografia {
+    height: 250px;  
+  }
+
+  .infografia-titulo {
+    font-size: 0.9em; 
+  }
+
+  .infografia-texto {
+    font-size: 11px; 
+  }
+}
+
+
+/* NOTICIA */
+.noticias1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  min-width: 250px;
+  max-width: calc(25% - 20px);
+  height: 500px;
+}
+
+.noticias-container {
+  width: 100%;
+}
+
+.noticias-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.noticias-contexto {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.noticias-titulo {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.noticias-texto {
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.botonpp {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  margin: 20px auto;        
+}
+
+#toggleButton3 {
+  padding: 10px 20px;         
+  background-color: #00796b;  
+  color: white;              
+  border: none;               
+  border-radius: 5px;       
+  cursor: pointer;            
+  transition: background-color 0.3s; 
+}
+
+#toggleButton3:hover {
+  background-color: #005f56;  
+  transform: scale(1.05);    
+}
+
+
+/* Estilo del botón */
+.descarga-boton {
+  display: block;
+  margin: 20px auto 10px;
+  padding: 8px 16px;
+  background-color: #00796b;
+  color: white;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  
+}
+
+.descarga-boton:hover {
+  background-color: #005f56;
+}
+
+.tercero {
+  display: none;
+}
+
+
+
+#toggleButton3 {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+   margin-bottom: 80px;
+}
+
+#toggleButton3:hover {
+  background-color: #005f56;
+  transform: scale(1.05);
+}
+
+/* En pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+  .noticias1 {
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .noticias {
+    flex: 1 1 100%; 
+    margin: 10px 0;
+    height: auto; /* La altura se ajusta automáticamente */
+  }
+
+  .noticias-container img {
+    height: 150px; /* La imagen ocupa menos espacio */
+  }
+
+  .descarga-boton {
+    width: 100%; /* El botón ocupa todo el ancho */
+  }
+
+  #toggleButton3 {
+    width: 100%; /* El botón ocupa todo el ancho */
+  }
+}
+
+
+/* En pantallas medianas (tabletas) */
+@media screen and (max-width: 900px) {
+  .noticias {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(100% - 20px); 
+  }
+}
+
+/* En pantallas grandes (computadoras de escritorio) */
+@media screen and (min-width: 901px) {
+  .noticias {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+  }
+}
+
+
+/* FOOTER */
+.pie-de-pagina {
+  background-color: #063b3b;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Calibri", sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.seccion-pie {
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.seccion-pie h4 {
+  color: #fed08a;
+  margin-bottom: 10px;
+}
+
+.seccion-pie p,
+.seccion-pie ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.seccion-pie ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.seccion-pie ul li {
+  margin: 5px 0;
+}
+
+.seccion-pie ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.seccion-pie ul li a:hover {
+  text-decoration: underline;
+}
+
+.enlaces-sociales {
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-sociales li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.enlaces-sociales li a:hover {
+  color: #5dc1b9;
+}
+
+.pie-inferior {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #5dc1b9;
+  padding-top: 10px;
+}
+
+.logo-footer {
+  max-width: 150px; /* Ajusta el tamaño máximo del logo */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSI FOOTER */
+@media (max-width: 1024px) {
+  .contenedor-pie {
+    justify-content: center;
+    text-align: center;
+  }
+  .seccion-pie {
+    width: 45%; /* Ajusta el ancho de las secciones en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-pie {
+    flex-direction: column; /* Las secciones se apilan verticalmente */
+  }
+  .seccion-pie {
+    width: 100%; /* Cada sección ocupa todo el ancho en pantallas pequeñas */
+  }
+  .pie-inferior {
+    margin-top: 15px;
+  }
+}
+
+/* FIN DE FOOTER */

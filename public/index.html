@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/responsiMenu.js"></script>
+    <title>Principal</title>
+</head>
+
+<body>
+    <header class="header-fijo">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="html/juego.html" class="enlaceBoton">Diviértete</a></li>
+                    <li class="elementoListaBotones"><a href="html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="html/noticias.html" class="enlaceBoton">Noticias</a></li>
+                    <li class="elementoListaBotones"><a href="html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="html/quienessomo.html">Nosotros</a></li>
+                <li><a href="html/contacto.html">Contáctanos</a></li>
+                <li><a href="html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="js/responsiMenu.js"></script> <!-- Archivo JavaScript para manejar el menú -->
+
+    <main class="contenidoMain">
+        <!-- inicio calendario -->
+        <div class="calendario">
+            <div class="date-message" id="dateMessage"></div>
+        </div>
+        <script src="js/calendario.js"></script>
+        <!-- fin calendario -->
+        <section class="banner">
+            <img class="banner-imagen" src="imagenes/portada3.jpg">
+            <div class="banner-overlay"></div>
+            <div class="banner-text">
+                <h1 class="banner-titulo">BIENVENIDOS</h1>
+                <p class="parrafo1">En claizu, creemos que la salud y el bienestar son la base para una
+                    vida plena. Inspirados en el tercer Objetivo de Desarrollo Sostenible, trabajamos para
+                    promover hábitos saludables y brindar soluciones prácticas que mejoren la calidad de vida.
+                </p>
+                <a href="html/ODS.html" class="btnIndex">Ver mas</a>
+            </div>
+        </section>
+        <img src="imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+        <section class="seccion2">
+            <div class="cuadradoHistoria" alt="cuadrado de historia">
+                <h1 class="historia"><u>HISTORIA</u></h1>
+                <p class="parrafoHistoria">
+                    En 2015, la ONU aprobó la Agenda 2030 sobre el Desarrollo Sostenible,
+                    una oportunidad para que los países y sus sociedades emprendieran un
+                    nuevo camino con el que mejorar la vida de todas las personas, sin
+                    dejar a nadie atrás. La Agenda cuenta con 17 Objetivos de Desarrollo
+                    Sostenible, que establecen que la erradicación de la pobreza debe ir
+                    de la mano de estrategias que fomenten el crecimiento económico y
+                    aborden una serie de necesidades sociales como la educación, la
+                    sanidad, la protección social y las perspectivas de empleo, al tiempo
+                    que se combate el cambio climático y se protege el medio ambiente. En
+                    este sitio mostramos la información sobre esos objetivos y los
+                    esfuerzos que la ONU y sus socios están llevando a cabo para construir
+                    un mundo mejor
+                </p>
+            </div>
+            <div class="contenedorPadre">
+                <div class="contenedorObjetivo">
+                    <h1 class="titulo1">¿Qué son los Objetivos de Desarrollo Sostenible?</h1>
+                    <div class="info">
+                        <img src="imagenes/circulo.png" alt="Círculo de colores" class="circulo" />
+                        <p class="parrafo">
+                            Los Objetivos de Desarrollo Sostenible (ODS), también conocidos como
+                            Objetivos Globales, fueron adoptados por las Naciones Unidas en 2015,
+                            como un llamamiento universal para poner fin a la pobreza, proteger
+                            el planeta y garantizar que para el 2030 todas las personas
+                            disfruten de paz y prosperidad. Los 17 ODS están integrados y
+                            reconocen que la acción en un área afectará los resultados en otras
+                            áreas y que el desarrollo debe equilibrar la sostenibilidad social,
+                            económica y ambiental.
+                        </p>
+                    </div>
+                    <h1 class="tituloOO">¿Cuáles son nuestros objetivos?</h1>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="objetivo1"></div>
+                                <div class="texto">
+                                    <p class="textoObjetivo">La cumbre sobre ODS supone un llamado a la acción para
+                                        recuperar el impulso y para que los líderes mundiales se reúnan, reflexionen
+                                        sobre nuestra situación y se comprometan a seguir trabajando.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="objetivo2"></div>
+                                <div class="texto">
+                                    <p class="textoObjetivo">La cumbre sobre ODS supone un llamado a la acción para
+                                        recuperar el impulso y para que los líderes mundiales se reúnan, reflexionen
+                                        sobre nuestra situación y se comprometan a seguir trabajando.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="objetivo3"></div>
+                                <div class="texto">
+                                    <p class="textoObjetivo">La cumbre sobre ODS supone un llamado a la acción para
+                                        recuperar el impulso y para que los líderes mundiales se reúnan, reflexionen
+                                        sobre nuestra situación y se comprometan a seguir trabajando.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenido-linea">
+            <center>
+                <div class="timeline-container"> <!-- Contenedor adicional -->
+                    <div class="timeline">
+                        <h1 class="timeline-title">
+                            <span>Línea del Tiempo de los ODS</span>
+                        </h1>
+                        <div class="timeline-body">
+                            <div class="timeline-item">
+                                <span class="item-year">1992</span>
+                                <div class="item-body">
+                                    <p class="item-title">Cumbre de la Tierra en Río de Janeiro</p>
+                                    <p class="item-text">Primera gran conferencia de la ONU sobre medio ambiente
+                                        y
+                                        desarrollo.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="item-year">2000</span>
+                                <div class="item-body">
+                                    <p class="item-title">Declaración del Milenio</p>
+                                    <p class="item-text">Los líderes mundiales establecen los Objetivos de
+                                        Desarrollo del
+                                        Milenio (ODM).</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="item-year">2012</span>
+                                <div class="item-body">
+                                    <p class="item-title">Conferencia de la ONU sobre Desarrollo Sostenible</p>
+                                    <p class="item-text">Se sentaron las bases para la creación de los ODS en
+                                        Río de
+                                        Janeiro.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="item-year">2015</span>
+                                <div class="item-body">
+                                    <p class="item-title">Adopción de los ODS</p>
+                                    <p class="item-text">Los 193 Estados miembros de la ONU adoptan los 17 ODS
+                                        para 2030.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="item-year">2020</span>
+                                <div class="item-body">
+                                    <p class="item-title">Impacto de la Pandemia de COVID-19</p>
+                                    <p class="item-text">La pandemia afecta el progreso de los ODS, destacando
+                                        la salud y
+                                        bienestar.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="item-year">2030</span>
+                                <div class="item-body">
+                                    <p class="item-title">Meta de los ODS</p>
+                                    <p class="item-text">Se espera que todos los países hayan implementado los
+                                        ODS y
+                                        alcanzado sus metas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+        <img src="imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+        <section class="carrusel">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods1.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods2.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS3.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods4.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods5.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods6.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods7.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods8.jpg" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ods9.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS10.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS11.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS12.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS13.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS14.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS15.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS16.png" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imagenesOds/ODS17.jpg" class="ods1" />
+                            <div class="caption">
+                                <h1>summer vibes</h1>
+                                <ion-icon name="heart" class="like-btn"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="../public/js/carruselOds.js"></script>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+            <h2>Conoce un poco mas sobre las demas ODS</h2>
+            <br>
+            <br>
+            <div class="habilidades-lista">
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS1</h3>
+                    <h4 class="tipoOds">Fin de la pobreza</h4>
+                    <p>Erradicar la pobreza en todas sus formas, especialmente la pobreza extrema, garantizando recursos
+                        básicos para todos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS2</h3>
+                    <h4 class="tipoOds">Hambre cero</h4>
+                    <p>Acabar con el hambre y la malnutrición, promoviendo una agricultura sostenible y seguridad
+                        alimentaria.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS3</h3>
+                    <h4 class="tipoOds">Salud y bienestar</h4>
+                    <p>Garantizar vidas saludables y promover el bienestar para todas las edades, reduciendo
+                        enfermedades y mejorando la atención sanitaria.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS4</h3>
+                    <h4 class="tipoOds">Educación de calidad</h4>
+                    <p>Ofrecer una educación inclusiva y equitativa de calidad, promoviendo oportunidades de aprendizaje
+                        permanente.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS5</h3>
+                    <h4 class="tipoOds">Igualdad de género</h4>
+                    <p>Lograr la igualdad entre los géneros y empoderar a todas las mujeres y niñas.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS6</h3>
+                    <h4 class="tipoOds">Agua limpia y saneamiento</h4>
+                    <p>Asegurar la disponibilidad y gestión sostenible del agua potable y el saneamiento para todos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS7</h3>
+                    <h4 class="tipoOds">Energía asequible y no contaminante</h4>
+                    <p>Asegurar el acceso a una energía asequible, fiable, sostenible y moderna.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS8</h3>
+                    <h4 class="tipoOds">Trabajo decente y crecimiento económico</h4>
+                    <p>Promover un crecimiento económico sostenido e inclusivo con empleo decente para todos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS9</h3>
+                    <h4 class="tipoOds">Industria, innovación e infraestructura</h4>
+                    <p>Desarrollar infraestructuras resilientes, promover la industrialización inclusiva y fomentar la
+                        innovación.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS10</h3>
+                    <h4 class="tipoOds">Reducción de las desigualdades</h4>
+                    <p>Reducir las desigualdades dentro de los países y entre ellos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS11</h3>
+                    <h4 class="tipoOds">Ciudades y comunidades sostenibles</h4>
+                    <p>Hacer que las ciudades y asentamientos humanos sean inclusivos, seguros, resilientes y
+                        sostenibles.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS12</h3>
+                    <h4 class="tipoOds">Producción y consumo responsables</h4>
+                    <p>Garantizar modalidades sostenibles de producción y consumo.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS13</h3>
+                    <h4 class="tipoOds">Acción por el clima</h4>
+                    <p>Adoptar medidas urgentes para combatir el cambio climático y sus impactos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS14</h3>
+                    <h4 class="tipoOds">Vida submarina</h4>
+                    <p>Conservar y utilizar de manera sostenible los océanos, mares y recursos marinos.</p>
+                </div>
+                <div class="habilidad">
+                    <h3 class="numeroOds">ODS15</h3>
+                    <h4 class="tipoOds">Vida de ecosistemas terrestres</h4>
+                    <p>Proteger, restaurar y promover el uso sostenible de los ecosistemas terrestres.</p>
+                </div>
+
+            </div>
+            <div class="ultimasTargetas">
+                <div class="habilidad16">
+                    <h3 class="numeroOds">ODS16</h3>
+                    <h4 class="tipoOds">Paz, justicia e instituciones sólidas</h4>
+                    <p>Promover sociedades pacíficas e inclusivas y fortalecer las instituciones para todos.</p>
+                </div>
+                <div class="habilidad17">
+                    <h3 class="numeroOds">ODS17</h3>
+                    <h4 class="tipoOds">Alianzas para lograr los objetivos</h4>
+                    <p>Fortalecer los medios de implementación y revitalizar la alianza mundial para el desarrollo
+                        sostenible.</p>
+                </div>
+            </div>
+        </section>
+        <img src="imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+        <section class="Noticias">
+            <div class="NoticiasContenido">
+                <!-- Tarjetas de noticias -->
+                <div class="Tarjetas">
+                    <div class="Noticia1">
+                        <h3 class="NoticiaTitulo">Cambios en las ODS</h3>
+                        <p class="NoticiaFecha">Publicado el: 5 de julio de 2023</p>
+                        <p class="NoticiaTexto">Comunicado de prensa: La ONU lanza una campaña para renovar compromisos
+                            y la acción a nivel mundial en pro de los Objetivos de Desarrollo Sostenible</p>
+                        <a href="https://www.un.org/sustainabledevelopment/es/2023/07/press-release-un-launches-campaign-calling-for-renewed-global-ambition-and-action-for-the-sustainable-development-goals32808/"
+                            class="NoticiaLeerMas">Leer más</a>
+                    </div>
+                    <div class="Noticia2">
+                        <h3 class="NoticiaTitulo">Compromiso de los lideres</h3>
+                        <p class="NoticiaFecha">Publicado el: 21 de septiembre de 2016</p>
+                        <p class="NoticiaTexto">Los líderes mundiales se comprometen en la ONU a abordar la resistencia
+                            a los antimicrobianos</p>
+                        <a href="https://www.un.org/sustainabledevelopment/es/2016/09/l-os-lideres-mundiales-se-comprometen-en-la-onu-a-abordar-la-resistencia-a-los-antimicrobianos/"
+                            class="NoticiaLeerMas">Leer más</a>
+                    </div>
+                    <div class="Noticia2">
+                        <h3 class="NoticiaTitulo">Compromiso de los lideres</h3>
+                        <p class="NoticiaFecha">Publicado el: 21 de septiembre de 2016</p>
+                        <p class="NoticiaTexto">Los líderes mundiales se comprometen en la ONU a abordar la resistencia
+                            a los antimicrobianos</p>
+                        <a href="https://www.un.org/sustainabledevelopment/es/2016/09/l-os-lideres-mundiales-se-comprometen-en-la-onu-a-abordar-la-resistencia-a-los-antimicrobianos/"
+                            class="NoticiaLeerMas">Leer más</a>
+                    </div>
+                </div>
+                <!-- Imagen al lado derecho -->
+                <div class="ImagenLateral">
+                    <img src="imagenes/noticiaIndex3.jpg" alt="Sección de noticias" />
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../public/imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

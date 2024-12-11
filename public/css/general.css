@@ -1,0 +1,370 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #09504a,
+    #93cfca,
+    #ffffff,
+    rgb(254, 254, 254)
+  );
+  margin: 0;
+  font-family: "Calibri", sans-serif;
+  line-height: 1;
+}
+
+
+/* Header fijo */
+.header-fijo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #063b3b;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-fijo .encabezado img {
+  max-height: 60px;
+}
+
+.encabezado {
+  background-color: #063b3b;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.claizu {
+  max-height: 58px;
+}
+
+.botonMenu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Menú General */
+.menuGeneral {
+  background-color: #f4f4f4;
+  padding: 10px;
+  background: linear-gradient(to bottom, #09504a, #389292);
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedorBotones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.listaBotones {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+}
+
+.elementoListaBotones {
+  position: relative;
+  flex: 1;
+  margin: 0 15px;
+
+}
+
+.enlaceBoton {
+  display: block;
+  color: #fff;
+  background-color: #329898cf;
+  text-decoration: none;
+  padding: 12px 0;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  border: 3px solid #fed08ae9;
+}
+
+.enlaceBoton:hover {
+  background-color: #276862;
+  color: #fff;
+}
+
+/* Contenido desplegable */
+.contenidoDesplegable {
+  padding: 15px;
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, #2f8584, #2f8584, #328a89, #09504a);
+  min-width: 220px;
+  z-index: 10;
+  font-size: 16px;
+}
+
+.enlaceDesplegable {
+  display: block;
+  padding: 8px 8px;
+  margin: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  background-color: #329898cf;
+  border: 3px solid #fed08a;
+  font-size: 16px;
+}
+
+.enlaceDesplegable:hover {
+  background-color: #276862;
+}
+
+/* Asegura que el menú desplegable se muestre al pasar el ratón */
+.elementoListaBotones:hover .contenidoDesplegable {
+  display: block;
+}
+
+.botonDesplegable {
+  background-color: #329898cf;
+  color: white;
+  padding: 11px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+  border: 3px solid #fed08a;
+  font-size: 16px;
+  font-family: "Calibri", sans-serif;
+}
+
+.botonDesplegable:hover {
+  background-color: #276862;
+}
+
+/* Menú Off-Canvas */
+.menuOffCanvas {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.menuOffCanvas.activo {
+  display: block; /* Se muestra cuando tiene la clase 'activo' */
+}
+
+.menuOffCanvas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuOffCanvas ul li {
+  margin: 20px 0;
+}
+
+.menuOffCanvas ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+}
+
+.menuOffCanvas ul li a:hover {
+    background-color: #276862;
+}
+
+
+
+/* Menú General (ocultar en móviles) */
+.menuGeneral {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menuGeneral {
+    display: none;
+  }
+
+  .menuOffCanvas {
+    display: block;
+  }
+
+  .menuOffCanvas.activo {
+    display: block;
+    width: 35%;
+  }
+}
+
+
+/* Estilos del menú Off-Canvas */
+.menuOffCanvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #063b3b;
+  color: white;
+  padding: 20px;
+  z-index: 200;
+}
+
+.menuOffCanvas.activo {
+  display: block;
+}
+
+.botonMenu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .botonMenu {
+    display: block;
+  }
+}
+
+
+
+  /* Fin de menú */
+
+
+  /* FOOTER */
+.pie-de-pagina {
+    background-color: #063b3b;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Calibri', sans-serif;
+  }
+  
+  .contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .seccion-pie {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+  }
+  
+  .seccion-pie h4 {
+    color: #fed08a;
+    margin-bottom: 10px;
+  }
+  
+  .seccion-pie p,
+  .seccion-pie ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .seccion-pie ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .seccion-pie ul li {
+    margin: 5px 0;
+  }
+  
+  .seccion-pie ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .seccion-pie ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .enlaces-sociales {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .enlaces-sociales li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .enlaces-sociales li a:hover {
+    color: #5dc1b9;
+  }
+  
+  .pie-inferior {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #5dc1b9;
+    padding-top: 10px;
+  }
+  
+  .logo-footer {
+    max-width: 150px; /* Ajusta el tamaño máximo del logo */
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* RESPONSI FOOTER */
+  @media (max-width: 1024px) {
+    .contenedor-pie {
+      justify-content: center;
+      text-align: center;
+    }
+    .seccion-pie {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+
+    .contenedor-pie {
+      flex-direction: column; 
+      width: 90%;
+    }
+    .seccion-pie {
+      width: 100%; 
+    }
+    .pie-inferior {
+      margin-top: 15px;
+    }
+
+    .enlaces-sociales {
+      justify-content: center;
+    }
+  }
+  
+
+  /* FIN DE FOOTER */
+  

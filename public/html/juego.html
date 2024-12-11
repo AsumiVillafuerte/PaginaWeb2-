@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/juego.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="../imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="../index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="../html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="../html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="../html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="../html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="../html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/juego.html" class="enlaceBoton">Diviértete</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="../html/noticias.html" class="enlaceBoton">Noticias</a>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="../html/contactanos2.html">Nosotros</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="../html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../js/responsiMenu.js"></script>
+
+    <main class="contenidoMain">
+        <section class="gif-background">
+            <div>
+                <h1 class="titulo">¡Pon a prueba tu mente!</h1>
+                <p class="parrafo">En nuestra sección de juegos, te invitamos a jugar un juego de tarjetas de memoria,
+                    perfecto para mantener tu mente ágil y entretenida. Este juego está diseñado para mejorar tu
+                    concentración y memoria, mientras te tomas un breve descanso en tu rutina diaria.</p>
+            </div>
+            <a class="boton" href="../html/juego.html#juego">EMPECEMOS YA</a>
+
+        </section>
+        <section class="informacion-juego" id="juego">
+            <div class="imagenSaludo">
+                <img src="../imagenes/saludoConejo.gif" alt="">
+            </div>
+            <div class="informacion">
+                <h2 class="titulo-juego">¿Cómo jugar?</h2>
+                <p class="descripcion-juego">El objetivo es simple: debes encontrar las parejas de tarjetas con la misma
+                    imagen. ¡A medida que avanzas, tu memoria se pondrá a prueba! Es un excelente ejercicio mental para
+                    relajarte y ejercitar tu cerebro en cualquier momento del día.</p>
+
+                <h3 class="subtitulo-beneficios">Beneficios para tu bienestar:</h3>
+                <ul class="lista-beneficios">
+                    <li><strong>Aumenta tu memoria y concentración:</strong> Desarrolla tu capacidad para recordar
+                        detalles
+                        y mejorar tu enfoque.</li>
+                    <li><strong>Reduce el estrés:</strong> Un juego simple puede ser la forma ideal de desconectar y
+                        relajarte entre tareas.</li>
+                    <li><strong>Ejercita tu mente:</strong> Al desafiar tu cerebro con patrones y asociaciones,
+                        contribuyes
+                        a mantenerlo saludable y activo.</li>
+                </ul>
+                <p class="llamada-accion">¡Desafía a tus amigos, diviértete y mejora tu bienestar mental con cada
+                    partida!
+                    Porque en el camino hacia un mejor bienestar, el cuidado de tu mente es tan importante como el de tu
+                    cuerpo.</p>
+            </div>
+        </section>
+
+
+
+
+        <section class="section1">
+            <div class="pasos">
+                <h1>Juego de memoria</h1>
+                <h3 class="titulo-pasos">Pasos para empezar:</h3>
+                <ol class="lista-pasos">
+                    <li class="item-paso">
+                        <img class="imagen-paso" src="../imagenes/gatoNaranja.gif" alt="Tarjeta boca abajo">
+                        <span class="texto-paso">Haz clic en una tarjeta para revelarla.</span>
+                    </li>
+                    <li class="item-paso">
+                        <img class="imagen-paso" src="../imagenes/gatoNaranja.gif" alt="Tarjeta revelada">
+                        <span class="texto-paso">Encuentra su pareja entre las demás.</span>
+                    </li>
+                    <li class="item-paso">
+                        <span class="texto-paso">¡Sigue jugando hasta que encuentres todas las parejas!</span>
+                    </li>
+                </ol>
+            </div>
+            <div class="tablero">
+                <table>
+                    <tr>
+                        <td><button id="0" onclick="destapar(0)" class="card"></button></td>
+                        <td><button id="1" onclick="destapar(1)" class="card"></button></td>
+                        <td><button id="2" onclick="destapar(2)" class="card"></button></td>
+                        <td><button id="3" onclick="destapar(3)" class="card"></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="4" onclick="destapar(4)" class="card"></button></td>
+                        <td><button id="5" onclick="destapar(5)" class="card"></button></td>
+                        <td><button id="6" onclick="destapar(6)" class="card"></button></td>
+                        <td><button id="7" onclick="destapar(7)" class="card"></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="8" onclick="destapar(8)" class="card"></button></td>
+                        <td><button id="9" onclick="destapar(9)" class="card"></button></td>
+                        <td><button id="10" onclick="destapar(10)" class="card"></button></td>
+                        <td><button id="11" onclick="destapar(11)" class="card"></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="12" onclick="destapar(12)" class="card"></button></td>
+                        <td><button id="13" onclick="destapar(13)" class="card"></button></td>
+                        <td><button id="14" onclick="destapar(14)" class="card"></button></td>
+                        <td><button id="15" onclick="destapar(15)" class="card"></button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="puntuacion">
+                <h2 id="aciertos" class="estadisticas">Aciertos:0 </h2>
+                <h2 id="t_restante" class="estadisticas">Tiempo: 40 segundos</h2>
+                <h2 id="movimientos" class="estadisticas">Movimientos: 0 </h2>
+                <img src="../imagenes/gatos.gif" alt="gatos" class="gato">
+            </div>
+        </section>
+        <script src="../js/juego.js"></script>
+
+
+        <section class="seccion-datos-curiosos">
+            <div class="contenedor-datos">
+                <h2 class="titulo-datos">Desafío rápido: ¿Sabías que...?</h2>
+                <p class="descripcion-datos">
+                    La memoria es fascinante y está llena de curiosidades. Haz clic en el botón para descubrir un dato
+                    sorprendente:
+                </p>
+                <div class="trivia">
+                    <p id="pregunta" class="pregunta">
+                        ¿Cuántos datos puede almacenar nuestra memoria a corto plazo?
+                    </p>
+                    <button class="boton-respuesta" onclick="mostrarRespuesta()">Descúbrelo</button>
+                    <p id="respuesta" class="respuesta oculto">
+                        Nuestra memoria a corto plazo puede retener entre 5 y 9 elementos al mismo tiempo. ¡Por eso es
+                        importante entrenarla!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script src="../js/juegos.js"></script>
+
+        <section class="seccion-memoria">
+            <div class="imagen-memoria">
+                <img src="../imagenes/chicaCaminando.gif" alt="Imagen sobre la memoria">
+            </div>
+            <div class="informacion-memoria">
+                <h2 class="titulo-memoria">Consejos para mejorar tu memoria</h2>
+                <p class="descripcion-memoria">Mejorar tu memoria no solo te ayudará a recordar información, sino
+                    también a
+                    mantener tu mente activa y saludable. Aquí te dejamos algunos consejos prácticos para potenciar tu
+                    memoria en el día a día:</p>
+
+                <h3 class="subtitulo-memoria">Consejos clave:</h3>
+                <ul class="lista-memoria">
+                    <li><strong>Mantén tu cerebro activo:</strong> Juega juegos mentales, resuelve acertijos y aprende
+                        cosas
+                        nuevas.</li>
+                    <li><strong>Duerme lo suficiente:</strong> El sueño es fundamental para procesar la información y
+                        mejorar la memoria.</li>
+                    <li><strong>Haz ejercicio regularmente:</strong> El ejercicio no solo beneficia tu cuerpo, sino
+                        también
+                        tu cerebro.</li>
+                    <li><strong>Aliméntate bien:</strong> Una dieta equilibrada rica en antioxidantes y grasas
+                        saludables
+                        ayuda a fortalecer tu memoria.</li>
+                    <li><strong>Usa la repetición espaciada:</strong> Repasa lo aprendido a intervalos para que la
+                        información se fije mejor.</li>
+                    <li><strong>Reduce el estrés:</strong> Técnicas como la meditación y la respiración profunda ayudan
+                        a
+                        reducir la ansiedad y mejorar la memoria.</li>
+                </ul>
+
+                <p class="llamada-memoria">Incorpora estos hábitos a tu rutina diaria para mantener tu memoria en su
+                    mejor
+                    estado. ¡Tu cerebro te lo agradecerá!</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

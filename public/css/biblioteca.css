@@ -1,0 +1,248 @@
+body {
+  background-color: rgb(125, 227, 231);
+  margin: 0;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contenidoMain {
+  margin-top: 135px; /* Ajusta el valor según el alto de tu header */
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  background-color: rgba(58, 188, 178, 1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+}
+
+.card-image {
+  width: 150px;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card-paragraph {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: rgba(6, 59, 59, 1);
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: auto;
+  /* Asegura que el botón esté al final */
+  font-size: 0.9em;
+  width: fit-content;
+}
+
+.card-button:hover {
+  background-color: #1a8279;
+}
+
+/*Imgen portada*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 99vw;
+  background-image: url("../imagenes/bibliotecafonfito.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 50vh; /* Ajusta la altura del contenedor para dispositivos móviles */
+    width: 100%;
+  }
+  
+}
+
+.texto {
+  margin: 40px;
+  padding: 20px;
+  background-color: transparent;
+  color: #252525;
+  text-align: center;
+}
+
+.Subtítulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 10px;
+}
+
+.contexto {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 10px 0;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .menu-section {
+    padding: 20px;
+  }
+
+  .input {
+    width: 300px;
+  }
+
+  .botom {
+    padding: 10px 20px;
+  }
+
+  .card-title {
+    font-size: 1.8em;
+  }
+
+  .card-subtitle {
+    font-size: 1.5em;
+  }
+
+  .card-paragraph {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Tablets */
+  .menu-section {
+    padding: 10px;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .botom {
+    width: 80%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .botom {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    height: 50vh;
+  }
+
+  .texto {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .Subtítulo {
+    font-size: 2rem;
+  }
+
+  .contexto {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS - Bienestar y Salud</title>
+    <link rel="stylesheet" href="../css/ODS.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+</head>
+
+<body class="fondoGeneral">
+
+    <header class="header-fijo">
+        <section class="encabezado">
+            <div class="encabezado">
+                <img src="../imagenes/logoPrincipal.png" alt="Logo" class="claizu">
+                <!-- Botón para abrir el menú Off-Canvas -->
+                <button class="botonMenu" onclick="toggleMenu()">☰</button>
+            </div>
+
+        </section>
+
+        <!-- Menú General con botones desplegables -->
+        <section class="menuGeneral">
+            <nav class="contenedorBotones">
+                <ul class="listaBotones">
+                    <li class="elementoListaBotones">
+                        <a href="../index.html">
+                            <button class="botonDesplegable" aria-expanded="false">Inicio</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../index.html" class="enlaceDesplegable">¿Qué son las ODS?</a>
+                            <a href="../html/contactanos2.html" class="enlaceDesplegable">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones">
+                        <a href="../html/ODS.html">
+                            <button class="botonDesplegable" aria-expanded="false">Bienestar y Salud</button>
+                        </a>
+                        <div class="contenidoDesplegable">
+                            <a href="../html/ODS.html#que-Es" class="enlaceDesplegable">¿De qué trata?</a>
+                            <a href="../html/ODS.html#que-hacer" class="enlaceDesplegable">¿Qué hacer?</a>
+                            <a href="../html/ODS.html#informate-mas" class="enlaceDesplegable">Proyectos</a>
+                            <a href="../html/biblioteca.html" class="enlaceDesplegable">Infórmate más</a>
+                        </div>
+                    </li>
+                    <li class="elementoListaBotones"><a href="../html/juego.html" class="enlaceBoton">Diviértete</a></li>
+                    <li class="elementoListaBotones"><a href="../html/Voluntariado.html"
+                            class="enlaceBoton">Voluntariado</a></li>
+                    <li class="elementoListaBotones"><a href="../html/noticias.html" class="enlaceBoton">Noticias</a></li>
+                    <li class="elementoListaBotones"><a href="../html/producto2.html" class="enlaceBoton">Nuestro
+                            Producto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Menú Off-Canvas -->
+        <nav class="menuOffCanvas" id="menuOffCanvas">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#que-es">¿Qué son las ODS?</a></li>
+                <li><a href="../html/contactanos2.html">Nosotros</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ODS.html">Bienestar y Salud</a></li>
+                <li><a href="../html/juego.html">Diviértete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../js/responsiMenu.js"></script>  <!-- Archivo JavaScript para manejar el menú -->
+    <main class="contenidoMain">
+        <section>
+            <div class="contenedor">
+
+                <div class="banner" alt="mensaje">
+                    <p class="tituloBanner">El gasto de
+                        1.000 millones
+                        de dólares
+                        en cobertura
+                        vacunal puede
+                        salvar la vida
+                        de 1 millón
+                        de niños
+                        cada año.</p>
+                </div>
+                <!-- Contenedor de información -->
+                <div class="contenedor2" id="que-Es">
+                    <div class="info-container">
+                        <div class="info-card">
+                            <h3>¿Cuál es el objetivo en este caso?</h3>
+                            <p class="contenido-blanco">Garantizar una vida sana y promover el bienestar de toda a todas
+                                las
+                                edades.</p>
+                            <h3>¿Por qué?</h3>
+                            <p class="contenido-blanco">Garantizar una vida sana y promover el bienestar de todas las
+                                edades
+                                es importante para la construcción de sociedades pacíficas y sostenibles. A pesar de los
+                                importantes avances que se han hecho en los últimos años en la mejora de la esperanza de
+                                vida y en la reducción de algunas de las causas comunes de mortalidad infantil,
+                                persisten
+                                profundas desigualdades en el acceso a la asistencia sanitaria.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>¿Qué progresos hemos logrado hasta ahora?</h3>
+                            <p class="contenido-blanco"> Se han hecho grandes progresos en aumentar el acceso al agua
+                                potable y a instalaciones de saneamiento, así como en el de la lucha contra el VIH/SIDA,
+                                la
+                                malaria y otras enfermedades.</p>
+                            <p class="contenido-blanco">Desde 1990, la mortalidad materna se ha reducido casi en un 50 %
+                                y
+                                entre 2000 y 2016, la tasa de mortalidad de menores de 5 años disminuyó en un 47 %,
+                                pasando
+                                de 78 muertes por cada 1000 nacidos vivos en 2000 a 41 en 2016. Sin embargo, es
+                                necesario
+                                mejorar el acceso a servicios médicos esenciales y reducir riesgos ambientales.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>¿Qué puedo hacer para ayudar ?</h3>
+                            <p class="contenido-blanco">Todos podemos apoyar para promover y participar en programas
+                                para la
+                                salud y el bienestar de nuestras comunidades, en especial para quienes más lo necesitan.
+                                Desde organizarnos en nuestra comunidad para crear conciencia hasta comprender mejor el
+                                valor de la salud y la seguridad, podemos marcar una diferencia al abogar por un acceso
+                                a
+                                servicios de salud de calidad.</p>
+                        </div>
+
+                    </div>
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide active">
+                                <a href="https://elcomercio.pe/tecnologia/actualidad/ya-no-hay-excusa-hacer-ejercicio-en-bicicleta-mejora-la-memoria-segun-la-ciencia-noticia/"
+                                    target="_blank">
+                                    <img src="../imagenes/bicicleta.png" alt="News 8">
+                                    <div class="caption">Hacer ejercicio en bicicleta mejora la memoria, según la
+                                        ciencia.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://elcomercio.pe/bienestar/alimentacion/alimentacion-sostenible-quieres-comer-saludable-mientras-cuidas-del-planeta-4-claves-noticia/"
+                                    target="_blank">
+                                    <img src="../imagenes/alimentosods.png" alt="News 2">
+                                    <div class="caption">¿Quieres comer saludable mientras cuidas del planeta? 4 claves
+                                        para
+                                        una alimentación sostenible.</div>
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://elcomercio.pe/mag/respuestas/uva-la-fruta-recomendada-por-expertos-para-mantener-tu-cerebro-saludable-salud-nnda-nnni-noticia/"
+                                    target="_blank">
+                                    <img src="../imagenes/comidaodssalud.png" alt="News 3">
+                                    <div class="caption">La fruta recomendada por expertos para mantener tu cerebro
+                                        saludable.</div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+                        <div class="button-container">
+                            <a href="https://www.undp.org/es/sustainable-development-goals/salud-bienestar"
+                                class="news-button">Salud y bienestar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<script src="../js/slider.js"></script>
+
+        <section class="RetosDesafios">
+            <div class="contenedorMetas">
+                <h2 class="tituloReto">RETOS Y DESAFIOS QUE ATRAVESAMOS</h2>
+                <img src="../imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+                <div class="introduccion">
+                    <p>El ODS 3 busca garantizar una vida sana y promover el bienestar para todos, pero enfrenta varios
+                        desafíos. A nivel local, las comunidades enfrentan barreras en el acceso a servicios de salud de
+                        calidad. A nivel nacional, las políticas de salud deben superar problemas como la falta de
+                        infraestructura y recursos. Internacionalmente, la cooperación entre países es clave para
+                        abordar desigualdades sanitarias y emergencias globales, como pandemias. A pesar de los avances,
+                        estos obstáculos siguen siendo un reto importante para alcanzar el bienestar y la salud global.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="contenedorTarjeta">
+                    <div class="tarjeta">
+                        <img src="../imagenes/noticiacañetehospital.png" alt="">
+                        <div class="tarjeta__contenido">
+                            <p class="tarjeta__titulo">Nivel Local</p>
+                            <p class="tarjeta__descripcion">En las comunidades locales, el acceso a servicios de salud
+                                de
+                                calidad sigue siendo un desafío importante. Las barreras económicas, geográficas y
+                                sociales dificultan que muchas personas puedan recibir atención médica adecuada, lo que
+                                subraya la necesidad de fortalecer programas comunitarios enfocados en el bienestar.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="../imagenes/noticiaperu.png" alt="">
+                        <div class="tarjeta__contenido">
+                            <p class="tarjeta__titulo">Nivel Nacional</p>
+                            <p class="tarjeta__descripcion">
+                                A nivel nacional, los sistemas de salud enfrentan problemas relacionados con la
+                                insuficiencia de infraestructura y la escasez de recursos humanos y financieros. Esto
+                                exige el diseño y la implementación de políticas públicas más efectivas que permitan
+                                cubrir la creciente demanda y garantizar un acceso equitativo a los servicios
+                                sanitarios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="../imagenes/africanoticia.png" alt="">
+                        <div class="tarjeta__contenido">
+                            <p class="tarjeta__titulo">Nivel Mundial</p>
+                            <p class="tarjeta__descripcion">
+                                En el ámbito global, las desigualdades sanitarias entre países desarrollados y en
+                                desarrollo son evidentes. La cooperación internacional es fundamental para responder a
+                                emergencias globales, como pandemias, y para compartir tecnologías, investigaciones y
+                                recursos que permitan mejorar la salud de manera equitativa en todo el mundo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fondoFrutas">
+
+            <section class="contenedorTarjetas" id="que-hacer">
+                <div class="accionesbaner">
+                    <h2 class="accionesbaner-title">Cuida tu Salud</h2>
+                </div>
+                <h3 class="description">Cinco acciones que dependen de ti para una buena salud</h3>
+                <div class="cards">
+                    <br>
+                    <div class="card red">
+                        <p class="tip">1 - Hidrátate adecuadamente</p>
+                        <p class="second-text">Las funciones que desempeña el agua en nuestro organismo son numerosas.
+                            Regula la temperatura
+                            corporal, transporta nutrientes y oxígeno a las células y colabora en la conversión de
+                            alimentos en
+                            energía. Además participa en la eliminación de toxinas.Es importante que tengas en cuenta
+                            que la ingesta de agua debe realizarse en forma gradual durante el día.
+                            En caso de que te resulte difícil incorporar este hábito, puedes beber, al menos, un vaso de
+                            agua en
+                            cada comida (desayuno, almuerzo, onces y cena) y otros cuatro vasos durante el resto del
+                            día.
+                            Además, la ingesta de frutas como la sandía, la piña o la naranja te permitirán incorporar
+                            más agua
+                            a tu organismo.</p>
+
+                    </div>
+                    <div class="card blue">
+                        <p class="tip">2 - Respeta tus horas de descanso</p>
+                        <p class="second-text">La calidad y la cantidad de tus horas de descanso determinarán el
+                            desarrollo de toda tu rutina.
+                            Durante el sueño, se cumplen procesos fisiológicos que permiten la regeneración de las
+                            fuentes de
+                            energía necesarias para el rendimiento físico y mental.
+                            Es fundamental que respetes tus horas de descanso para mantener tu salud
+                            y bienestar. Desconéctate de
+                            toda tecnología al menos una hora antes de acostarte y duerme entre 7 u 8 horas diarias.
+                            Además, ten en cuenta que siempre es conveniente mantener un horario
+                            regular, es decir, acostarte y
+                            levantarte todos los días a la misma hora aproximadamente.</p>
+
+                    </div>
+                    <div class="card green">
+                        <p class="tip">3 - Atiende qué y cuánto comes</p>
+                        <p class="second-text">Come lo necesario: evita seguir comiendo una vez que te sientas saciado.
+                            Es tan importante la calidad
+                            de lo que comes, como la cantidad. El exceso te conducirá al sobrepeso, con todas las
+                            consecuencias
+                            que esto implica. Además, una alimentación saludable debe incluir proteínas, hidratos de
+                            carbono y grasas saludables en
+                            proporciones adecuadas.
+                            Este es uno de los puntos más importantes en el camino hacia tu salud y
+                            bienestar. Llevar una dieta
+                            basada en plantas o de origen vegetal te permitirá disminuir la incidencia y la gravedad de
+                            enfermedades como la obesidad, la hipertensión, la hiperlipidemia, la hiperglucemia o la
+                            diabetes
+                            tipo 2.</p>
+
+                    </div>
+                    <div class="card yellow">
+                        <p class="tip">4 - Iniciativas de salud ambiental</p>
+                        <p class="second-text">Los lugares donde las personas viven y trabajan pueden tener un impacto
+                            importante en la salud pública ya que influye en temas como el aire limpio y agua potable, o
+                            alimentos.
+                            Los contaminantes ambientales se han relacionado con múltiples problemas de salud. Las
+                            iniciativas de salud ambiental van desde programas de uso compartido
+                            de vehículos y regulaciones de seguridad alimentaria hasta esfuerzos de limpieza comunitaria
+                            por ejemplo
+                            la Agencia de Protección Ambiental (EPA) emplea el programa Superfund el cual es uno
+                            de los ejemplos más conocidos de una iniciativa de salud ambiental para limpiar áreas
+                            contaminadas con materiales peligrosos. .</p>
+
+
+                    </div>
+                    <div class="card purple">
+                        <p class="tip">5 - Tecnología y telesalud</p>
+                        <p class="second-text">La tecnología sanitaria y la telemedicina tienen el potencial de eliminar
+                            barreras a la atención médica en muchas comunidades, especialmente en áreas rurales o de
+                            bajos ingresos que a menudo tienen menos proveedores de atención médica disponibles.Es
+                            probable que la atención médica remota se vuelva cada vez más común
+                            en las iniciativas de salud comunitaria, y los profesionales de la salud pública serán
+                            vitales para garantizar que las tecnologías sanitarias emergentes se utilicen en su máximo
+                            potencial.Cuando las personas pueden ponerse en contacto fácilmente con un
+                            proveedor pueden hacer preguntas, discutir los síntomas y tomar las
+                            medidas adecuadas para abordar los problemas de salud.</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="seccionProyecto" id="informate-mas">
+            <br>
+            <img src="../imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+            <h1 class="tituloProyecto">Te interesa saber mas sobre las acciones que puedes realizar para contribuir al
+                objetivo</h1>
+            <div class="contenedor">
+                <!-- Columna izquierda -->
+                <div class="ideas">
+                    <div class="idea" data-title=" Campaña de Alimentación Saludable"
+                        data-concept=" Es una iniciativa educativa diseñada para concienciar a los estudiantes sobre la importancia de una alimentación equilibrada y sus beneficios en la salud física y mental. A través de una serie de actividades prácticas y teóricas, este proyecto busca transformar los hábitos alimenticios de los jóvenes, promoviendo el consumo de alimentos nutritivos y enseñando a identificar los riesgos asociados con una dieta desequilibrada o excesiva en azúcares, grasas saturadas y procesados."
+                        data-guion1="Talleres prácticos sobre cómo planificar menús saludables."
+                        data-guion2="Creación de campañas visuales de sensibilización sobre la nutrición."
+                        data-guion3="Clases de cocina donde los estudiantes preparen recetas fáciles y nutritivas."
+                        data-img="/public/imagenes/group-diverse-people-holding-health-fitness-icons.jpg">
+                        <h3>Campaña de Alimentación Saludable</h3>
+                        <p>Promover hábitos alimenticios saludables entre los estudiantes, educándolos sobre la
+                            importancia de
+                            una dieta balanceada.</p>
+                    </div>
+                    <div class="idea" data-title="Retos de Actividad Física y Movimiento"
+                        data-concept="Tiene como objetivo promover la actividad física regular entre los estudiantes, utilizando la motivación de retos y competencias para generar una cultura activa dentro de la escuela. En un contexto donde muchos jóvenes pasan largos períodos sentados frente a pantallas, este proyecto busca romper con ese patrón a través de actividades físicas divertidas que los estudiantes disfruten y que les ayuden a reconocer los beneficios del ejercicio en su bienestar físico y emocional."
+                        data-guion1="Competencias deportivas y recreativas (fútbol, baloncesto, yoga, etc.)."
+                        data-guion2="Integración de actividades al aire libre como caminatas o carreras en grupo."
+                        data-guion3="Charlas educativas sobre la importancia del ejercicio para la salud mental y física."
+                        data-img="/public/imagenes/medium-shot-man-woman-training.jpg">
+                        <h3>Retos de Actividad Física y Movimiento</h3>
+                        <p>Motivar a los jóvenes a hacer ejercicio regularmente mediante retos divertidos y accesibles.
+                        </p>
+                    </div>
+                    <div class="idea" data-title="Programa de Salud Mental y Mindfulness"
+                        data-concept="Este proyecto se basa en la idea de que una buena salud mental es tan importante como la salud física. A través de prácticas de relajación, reflexión y conexión con el momento presente, los estudiantes aprenderán a identificar y gestionar sus emociones, mejorando su bienestar general. Las actividades de mindfulness se integrarán de manera progresiva en la rutina diaria, no solo como herramientas para reducir el estrés, sino también como una forma de mejorar la concentración, la toma de decisiones y las relaciones interpersonales."
+                        data-guion1="Talleres de meditación y respiración."
+                        data-guion2="Creación de espacios tranquilos dentro de la escuela para la práctica de mindfulness."
+                        data-guion3="Charlas y actividades sobre cómo identificar señales de estrés y manejar las emociones."
+                        data-img="/public/imagenes/front-view-young-people-church-praying.jpg">
+                        <h3>Programa de Salud Mental y Mindfulness</h3>
+                        <p>Promover el bienestar emocional a través de la práctica de mindfulness y otras técnicas de
+                            manejo del
+                            estrés.</p>
+                    </div>
+                </div>
+
+                <!-- Imagen central -->
+                <div class="imagen-central">
+                    <img src="../imagenes/circulo.png" alt="Imagen central">
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="ideas">
+                    <div class="idea" data-title="Jornada de Voluntariado y Apoyo Comunitario"
+                        data-concept=" Busca fomentar el sentido de responsabilidad social y solidaridad entre los estudiantes, involucrándolos en actividades de voluntariado que beneficien a su comunidad. Al ayudar a los demás, los jóvenes experimentarán un impacto positivo en su propio bienestar emocional y aprenderán a valorar el apoyo mutuo como un componente esencial de la salud y el bienestar."
+                        data-guion1="Voluntariado en comedores sociales, albergues o centros de apoyo a personas vulnerables."
+                        data-guion2="Campañas de recolección de alimentos, ropa o productos de higiene para personas necesitadas."
+                        data-guion3="Voluntariado en comedores sociales, albergues o centros de apoyo a personas vulnerables."
+                        data-img="/public/imagenes/different-people-doing-volunteer-work-with-food.jpg">
+                        <h3>Jornada de Voluntariado y Apoyo Comunitario</h3>
+                        <p>Fomentar la responsabilidad social y el bienestar emocional de los estudiantes mediante
+                            actividades
+                            de voluntariado comunitario. </p>
+
+                    </div>
+                    <div class="idea" data-title="Primeros Auxilios"
+                        data-concept="Capacitar a los estudiantes en la aplicación de primeros auxilios básicos a través de talleres prácticos, proporcionándoles los conocimientos y habilidades necesarias para reaccionar adecuadamente en situaciones de emergencia. Este taller pretende aumentar la confianza de los estudiantes al enfrentarse a accidentes y situaciones de riesgo, mejorando su capacidad para prevenir lesiones graves y salvar vidas."
+                        data-guion1="Capacitación efectiva en emergencias."
+                        data-guion2="Confianza para actuar en situaciones de emergencia"
+                        data-guion3="Promoción de la salud y la seguridad'" data-img="/public/imagenes/hands-only-CPR.jpg">
+                        <h3>Primeros Auxilios</h3>
+                        <p>Capacitar a los estudiantes en técnicas básicas de primeros auxilios para actuar
+                            adecuadamente en
+                            emergencias.</p>
+                    </div>
+                    <div class="idea" data-title="Educación sobre Salud Sexual y Reproductiva"
+                        data-concept="Es un proyecto educativo enfocado en la salud sexual y reproductiva de los jóvenes, que promueve el conocimiento de métodos anticonceptivos, la prevención de enfermedades de transmisión sexual (ETS) y el respeto por el consentimiento y las relaciones saludables. El objetivo es empoderar a los estudiantes para que tomen decisiones informadas sobre su salud sexual, reduciendo el riesgo de embarazos no deseados y promoviendo actitudes responsables y respetuosas en sus relaciones"
+                        data-guion1="Talleres interactivos de educación sexual" data-guion2="Charlas con expertos"
+                        data-guion3="Campañas de sensibilización" data-img="/public/imagenes/Foto-2-1024x683.webp">
+                        <h3>Educación sobre Salud Sexual y Reproductiva</h3>
+                        <p>Proyecto educativo que promueve la salud sexual y reproductiva con información clara para
+                            jóvenes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal">
+                <button class="close-btn" id="close-btn">&times;</button>
+                <div class="modal-content">
+                    <div class="modal-text">
+                        <h3 id="modal-title"></h3>
+                        <p id="modal-concept"></p>
+                        <div class="guiones">
+                            <div class="guion"><span id="guion1"></span></div>
+                            <div class="guion"><span id="guion2"></span></div>
+                            <div class="guion"><span id="guion3"></span></div>
+                        </div>
+                    </div>
+                    <div class="modal-img">
+                        <img id="modal-img" src="" alt="Imagen del detalle">
+                    </div>
+                </div>
+            </div>
+            <script src="../js/proyectos.js"></script>
+            <img src="../imagenes/raya.png" alt="Raya decorativa" class="rayaAmarilla" />
+        </section>
+
+        <section class="ods3relacional">
+            <div class="ods-section">
+                <h2 class="ods-subtitulo1">¿como se relacionan los ods?</h2>
+                <div class="ods-description-container">
+                    <p class="ods-description1">
+                        Los 17 Objetivos de Desarrollo Sostenible, también conocidos como ODS, marcan la ruta de la
+                        Agenda 2030, un plan global adoptado por 195 Estados Miembros de las Naciones Unidas para lograr
+                        un mundo sin pobreza, en el que se protege el medio ambiente y donde todas las personas gocen de
+                        paz y una vida próspera.
+                    </p>
+                    <p class="ods-description1">
+                        ¿Son ambiciosos? Sí. Por eso requieren del compromiso y la acción de todas las personas para
+                        poder hacerse realidad. Esta es una tarea donde todos los sectores –el público, el privado y la
+                        sociedad civil– tienen un rol que cumplir. Los 17 ODS no pueden ser vistos aislados unos de
+                        otros; todos están relacionados y su naturaleza es colaborativa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ods-circulosimagen">
+                <div class="ods-item">
+                    <img src="../imagenes/planetaods.png" alt="Planeta" class="ods-icon">
+
+                </div>
+                <div class="ods-item">
+                    <img src="../imagenes/prosperidadods.png" alt="Prosperidad" class="ods-icon">
+
+                </div>
+                <div class="ods-item">
+                    <img src="../imagenes/pazods.png" alt="Paz" class="ods-icon">
+
+                </div>
+                <div class="ods-item">
+                    <img src="../imagenes/pactosods.png" alt="Pactos" class="ods-icon">
+
+                </div>
+                <div class="ods-item">
+                    <img src="/public/imagenes/personasods.png" alt="Persona" class="ods-icon">
+
+                </div>
+            </div>
+
+            <div class="ods-frase">
+                <p>“Alcanzar el desarrollo sostenible requiere de alianzas sólidas entre quienes comparten una visión y
+                    objetivos que colocan a las personas y el planeta en el centro."</p>
+                <p><strong>Igor Garafulic</strong>, Coordinador Residente del Sistema de Naciones Unidas en el Perú</p>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie acerca-de-nosotros">
+                <h4>Acerca de Nosotros</h4>
+                <p>Somos una empresa comprometida con el bienestar y la salud.</p>
+            </div>
+            <div class="seccion-pie enlaces-rapidos">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/html/contactanos2.html">Sobre Nosotros</a></li>
+                    <li><a href="/public/html/producto2.html">Servicios</a></li>
+                    <li><a href="/public/html/contactanos2.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul class="enlaces-sociales">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            <img src="../imagenes/logoPrincipal.png" alt="Logo de la empresa" class="logo-footer">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

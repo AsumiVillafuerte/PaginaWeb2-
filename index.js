@@ -23,10 +23,10 @@ let connection;
 async function initializeDatabase() {
     try {
         connection = await mysql2.createConnection({
-            host: 'pagina.c16eemkuyw4f.us-east-1.rds.amazonaws.com',
+            host: 'paginaweb.cq4ys72oaqco.us-east-1.rds.amazonaws.com',
             database: 'formulario',
             user: 'admin',
-            password: '989806086asumi'
+            password: 'asumi989806086'
         });
         console.log('Conectado a la base de datos de eventos.');
     } catch (error) {
@@ -64,10 +64,10 @@ startServer();
 /Formulario/
 
 const conexion = mysql.createConnection({
-    host: 'pagina.c16eemkuyw4f.us-east-1.rds.amazonaws.com',
+    host: 'paginaweb.cq4ys72oaqco.us-east-1.rds.amazonaws.com',
     database: 'formulario',
     user: 'admin',
-    password: '989806086asumi'
+    password: 'asumi989806086'
 });
 
 conexion.connect((error) => {

@@ -1,5 +1,5 @@
-const express = require('express');
-const port = 3000;
+const express = require('express'); // Llama al módulo 'express' para crear el servidor web.
+const port = 3000; 
 const mysql = require('mysql');
 const mysql2 = require('mysql2/promise');
 const bodyParser = require('body-parser');
